@@ -17,6 +17,11 @@ class KalkulatorKali(Kalkulator):
         self.nilai = angka1 * angka2
         return self.nilai
 
+    """override method tambah_angka"""
+    def tambah_angka(self, angka1, angka2):
+        self.nilai = angka1 + angka2
+        return self.nilai
+
 kk = KalkulatorKali()
 a = kk.kali_angka(2, 3)  # sesuai dengan definisi class memiliki fitur kali_angka
 print(a)
